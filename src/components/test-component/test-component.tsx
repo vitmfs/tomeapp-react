@@ -1,17 +1,21 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import './test-component.css';
 
+const str = "_blank";
 
+const myStyle = {  
+    color: "Green",  
+    backgroundColor: "lightBlue",  
+};  
 
 
 const TestComp: React.FC = () => (
-    <>
-        <Button variant="contained">Hello World</Button>
+    <div style={myStyle}>
+
         <p>Something</p>
         <p>Something</p>
         <p>Something</p>
-    </>
+    </div>
 );
 
 export default TestComp;
